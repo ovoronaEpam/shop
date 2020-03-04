@@ -13,10 +13,10 @@ enum Category {
 
 export class FirstComponentComponent implements OnInit {
   public name: string;
-  public description: string
-  public price: number
-  public category: Category
-  public isAvailable: boolean
+  public description: string;
+  public price: number;
+  public category: Category;
+  public isAvailable: boolean;
   constructor() { }
 
   ngOnInit(): void {
