@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 
-import { ProductModel } from './product.model'
+import { ProductModel } from './product.model';
 @Injectable()
-export class ProductsServiceService { 
+export class ProductsServiceService { // надо поправить название класса и название файла. не нужно дублировать Service два раза
 
   constructor() { }
 

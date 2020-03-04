@@ -6,12 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-component.component.css']
 })
 export class ProductComponentComponent implements OnInit {
-  
+
   constructor() { }
 
   ngOnInit(): void {
-    
-  }  
+
+  }
   onBuy() {
     console.log('Buy clicked');
   }

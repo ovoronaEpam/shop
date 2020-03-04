@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
-import {ProductModel} from './../../services/product.model'
+import {ProductModel} from './../../services/product.model';
 import { ProductsServiceService } from './../../services/products-service.service';
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css'],
-  providers: [ProductsServiceService]
+  providers: [ProductsServiceService] // можно, но не стои так регистрировать сервисы
 })
 export class ProductListComponent implements OnInit {
-  items:ProductModel[];
+  items: ProductModel[];
 
   constructor(
-    private productService : ProductsServiceService
+    private productService: ProductsServiceService
   ) { }
 
   ngOnInit(): void {
