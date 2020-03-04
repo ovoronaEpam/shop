@@ -24,3 +24,5 @@ import { CartComponent } from './Components/cart/cart.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+// Несколько файлов не прошли линтинг. Ошибки надо исправлять
+// Структура приложения не такая, как предложено, почему?
