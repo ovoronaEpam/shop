@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { ProductModel } from './product.model';
 @Injectable()
-export class ProductsServiceService {
+export class ProductsService {
 
   constructor() { }
 
