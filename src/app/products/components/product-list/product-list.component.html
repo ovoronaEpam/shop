@@ -4,11 +4,7 @@
   <div class="panel-body">
     <ul>
         <li *ngFor="let it of items">
-          <ul>
-            <li>Name: {{it.name}}</li>
-            <li>Description: {{it.description}}</li>
-            <li>Price: {{it.price}}</li>
-          </ul>
+          <app-product-component [this.model]="it"></app-product-component>
         </li>
       </ul>
   </div>
