@@ -1,17 +1,8 @@
 <div *ngIf="! isEmpty() ; then thenBlock else elseBlock"></div>
-<ng-template #thenBlock>
-    <h5>Number of items: <span class="badge">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {{input.length}}</span></h5>
+<ng-template #thenBlock> 
     <div class="panel panel-default">
-    <div class="panel-heading">Items</div>
     <div class="panel-body">
         <ul>
-            <li *ngFor="let it of input">
-            <ul>
-                <li>Name: {{it.name}}</li>
-                <li>Description: {{it.description}}</li>
-                <li>Price: {{it.price}}</li>
-            </ul>
-            </li>
         </ul>
     </div>
     </div>

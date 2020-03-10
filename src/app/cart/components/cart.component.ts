@@ -3,6 +3,7 @@ import { Subscription } from 'rxjs';
 
 import { ProductModel } from './../../products/models/product.model';
 import { CartService } from './../services/cart.service';
+
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
@@ -10,7 +11,7 @@ import { CartService } from './../services/cart.service';
 })
 export class CartComponent implements OnInit, OnDestroy {
   private sub: Subscription;
-  input: ProductModel[];
+  items: Array<ProductModel>;
 
   public isEmpty(): boolean {
     return true;
@@ -19,7 +20,7 @@ export class CartComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.sub = this.cartService.items$.subscribe(
-      data => (this.input = data)
+      data => (this.items = data)
     );
   }
   ngOnDestroy() {
