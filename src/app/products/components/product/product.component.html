@@ -4,5 +4,4 @@
 <p>price : {{this.model.price}}</p>
 <p>category : {{Category[this.model.category]}}</p>
 <p>Avaliability: {{this.model.isAvailable ? 'Avaliable' : 'Not available'}}</p>
-<!-- <button *ngIf="this.model.isAvailable" (click)="onBuy()"> Buy </button> -->
-<button (click)="onBuy()"> Buy </button>
+<button *ngIf="this.model.isAvailable" (click)="onBuy()"> Buy </button>

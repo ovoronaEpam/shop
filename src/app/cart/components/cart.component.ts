@@ -14,7 +14,7 @@ export class CartComponent implements OnInit, OnDestroy {
   items: Array<ProductModel>;
 
   public isEmpty(): boolean {
-    return true;
+    return this.items.length === 0;
     }
   constructor(private cartService: CartService) { }
 
