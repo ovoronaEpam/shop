@@ -17,4 +17,8 @@ export class CartService {
   public addCart(item: ProductModel) {
     this.items.push(item);
   }
+
+  public delCart(item: ProductModel) {
+    this.items.splice(this.items.indexOf(item));
+  }
 }

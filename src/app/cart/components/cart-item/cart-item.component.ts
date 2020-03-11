@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Category, ProductModel } from './../../../products/models/product.model';
+import { CartService } from './../../../cart/services/cart.service';
 
 @Component({
   selector: 'app-cart-item',
@@ -10,9 +11,14 @@ export class CartItemComponent implements OnInit {
   Category = Category;
   @Input() model: ProductModel;
 
-  constructor() { }
+  constructor(private cartService: CartService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
+    onDel() {
+      console.log('Del clicked');
+      this.cartService.delCart(this.model);
+      this.model.isAvailable = true;
+    }
+  
 
 }
