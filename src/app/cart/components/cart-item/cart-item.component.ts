@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ProductModel } from './../../../products/models/product.model';
+import { Category, ProductModel } from './../../../products/models/product.model';
 
 @Component({
   selector: 'app-cart-item',
@@ -7,6 +7,7 @@ import { ProductModel } from './../../../products/models/product.model';
   styleUrls: ['./cart-item.component.css']
 })
 export class CartItemComponent implements OnInit {
+  Category = Category;
   @Input() model: ProductModel;
 
   constructor() { }
