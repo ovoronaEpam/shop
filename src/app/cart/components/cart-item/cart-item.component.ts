@@ -14,11 +14,12 @@ export class CartItemComponent implements OnInit {
   constructor(private cartService: CartService) { }
 
   ngOnInit(): void {}
-    onDel() {
+
+  onDel() {
       console.log('Del clicked');
-      this.cartService.delCart(this.model);
-      this.model.isAvailable = true;
-    }
-  
+      this.cartService.delCart(this.model); // компонент не владелец данных, не должен их менять, должен генерить аутпут
+      this.model.isAvailable = true; // компонент не владелец данных, не должен их менять
+  }
+
 
 }
