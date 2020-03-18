@@ -15,7 +15,8 @@ export class CartListComponent implements OnInit, OnDestroy {
 
   public isEmpty(): boolean {
     return this.items.length === 0;
-    }
+  }
+
   constructor(private cartService: CartService) { }
 
   ngOnInit(): void {

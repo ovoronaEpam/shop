@@ -8,7 +8,8 @@ import { ProductListComponent } from './products/components/product-list/product
   imports: [
     CommonModule
   ],
-  exports: [ProductListComponent, ProductComponent], // export things to be imported in another module
+  exports: [ProductListComponent], // export things to be imported in another module
   declarations: [ProductListComponent, ProductComponent],
 })
 export class ProductModule { }
+// Не место тут этому модулю. Его переместить в папку products

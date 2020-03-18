@@ -9,7 +9,8 @@ import { ProductModule} from './products.module';
     CommonModule,
     ProductModule
   ],
-  exports: [CartListComponent, CartItemComponent], // export things to be imported in another module
+  exports: [CartListComponent], // export things to be imported in another module
   declarations: [CartListComponent, CartItemComponent],
 })
 export class CartModule { }
+// переместить в папку cart
